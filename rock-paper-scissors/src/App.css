@@ -1,0 +1,93 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.choices button {
+  background: #1f1f1f;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  transition: transform 0.2s;
+}
+
+.choices button:hover {
+  transform: scale(1.05);
+}
+
+.hand {
+  font-size: 4rem;
+  margin: 1rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand.rock::before {
+  content: "✊"; /* Rock emoji */
+}
+
+.hand.paper::before {
+  content: "✋"; /* Paper emoji */
+}
+
+.hand.scissors::before {
+  content: "✌️"; /* Scissors emoji */
+}
+
+.result-screen,
+.selection {
+  margin-top: 2rem;
+}
+
+.hands {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.score {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
