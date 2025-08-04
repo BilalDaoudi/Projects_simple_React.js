@@ -41,8 +41,9 @@ yarn install
 ```bash
 npm start
 ```
-
-The app will open automatically in your browser at http://localhost:3000
 # or
+```bash
 yarn start
+```
+
 The app will open automatically in your browser at http://localhost:3000
